@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ================================
+         GANTI JUDUL & DESKRIPSI SEO DI SINI
+    ================================= -->
+    <title>Dapur Sekar — Balinese & Indonesian Kitchen in Denpasar</title>
+    <meta name="description" content="Dapur Sekar serves Balinese and Indonesian home cooking in Denpasar. See the menu, book a table, or order via WhatsApp. Open daily from 10:00.">
+    <meta name="theme-color" content="#1f1611">
+
+    <!-- GANTI FAVICON DI SINI (bisa diganti file .png / .ico milik Anda) -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='16' fill='%23b5471f'/%3E%3Ctext x='50%25' y='58%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='18' fill='white'%3ES%3C/text%3E%3C/svg%3E">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Dimuat di <head> agar class "js" terpasang sebelum halaman tampil -->
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- ================================
+         HEADER & NAVBAR
+    ================================= -->
+    <header class="header" id="header">
+        <nav class="nav container" aria-label="Main navigation">
+            <!-- ================================
+                 GANTI NAMA / LOGO RESTORAN DI SINI
+            ================================= -->
+            <a href="#home" class="logo" aria-label="Dapur Sekar, back to top">
+                <span class="logo__mark" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h18a9 9 0 0 1-18 0z"/><path d="M8 7c0-1.5 1-2 1-3.5M12 7c0-1.5 1-2 1-3.5M16 7c0-1.5 1-2 1-3.5"/></svg>
+                </span>
+                <span class="logo__text">Dapur Sekar<small>Balinese Kitchen</small></span>
+            </a>
+
+            <ul class="nav__menu" id="navMenu">
+                <li><a href="#home" class="nav__link">Home</a></li>
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#menu" class="nav__link">Menu</a></li>
+                <li><a href="#gallery" class="nav__link">Gallery</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+                <li class="nav__menu-cta"><a href="#" class="btn btn--primary btn--block js-wa" data-message="Halo Dapur Sekar, saya ingin memesan makanan." target="_blank" rel="noopener">Order Now</a></li>
+            </ul>
+
+            <a href="#" class="btn btn--primary btn--sm nav__cta js-wa" data-message="Halo Dapur Sekar, saya ingin memesan makanan." target="_blank" rel="noopener">Order Now</a>
+
+            <button type="button" class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main id="main">
+        <!-- ================================
+             HERO
+        ================================= -->
+        <section class="hero" id="home">
+            <!-- GANTI GAMBAR HERO DI SINI (foto makanan/restoran, ukuran ideal 1920x1200) -->
+            <img class="hero__bg" src="https://placehold.co/1920x1200/4a3325/d9bfa3?text=Hero+Photo" alt="A table at Dapur Sekar set with nasi campur, sate lilit and sambal matah" width="1920" height="1200" fetchpriority="high">
+
+            <div class="container">
+                <div class="hero__content reveal">
+                    <p class="status-pill" data-status="pill"><span class="status-dot" aria-hidden="true"></span><span class="status-text">Open daily · 10:00 – 22:00</span></p>
+
+                    <!-- GANTI NAMA, TAGLINE & DESKRIPSI HERO DI SINI -->
+                    <p class="hero__name">Dapur Sekar · Denpasar</p>
+                    <h1 class="hero__title">Authentic taste, <em>made with passion.</em></h1>
+                    <p class="hero__desc">Balinese and Indonesian home cooking, made every morning with vegetables and spices we buy fresh from Pasar Badung.</p>
+
+                    <div class="hero__actions">
+                        <a href="#menu" class="btn btn--light">
+                            View Menu
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+                        </a>
+                        <a href="#" class="btn btn--outline-light js-wa" data-message="Halo Dapur Sekar, saya ingin memesan makanan." target="_blank" rel="noopener">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>
+                            Order Now
+                        </a>
+                    </div>
+
+                    <ul class="hero__meta">
+                        <li class="hero__meta-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+                            <span><strong>4.8</strong> on Google</span>
+                        </li>
+                        <li class="hero__meta-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            <span><strong>1,000+</strong> happy customers</span>
+                        </li>
+                        <li class="hero__meta-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>Denpasar, Bali</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+             ABOUT
+        ================================= -->
+        <section class="section" id="about">
+            <div class="container about__grid">
+                <div class="about__media reveal">
+                    <!-- GANTI GAMBAR ABOUT DI SINI -->
+                    <img class="about__img-main" src="https://placehold.co/640x800/e8d9c5/7a5a3e?text=Our+Kitchen" alt="Ibu Sekar preparing base genep spice paste in the kitchen" width="640" height="800" loading="lazy">
+                    <img class="about__img-small" src="https://placehold.co/400x400/d9bfa3/5c4030?text=Dining+Room" alt="The open-air dining area with wooden tables and plants" width="400" height="400" loading="lazy">
+                    <p class="about__since"><strong>2014</strong>cooking in<br>Denpasar</p>
+                </div>
+
+                <div class="about__text reveal" style="--delay: 120ms">
+                    <span class="eyebrow">Our Story</span>
+                    <h2 class="section__title">A family kitchen that just kept growing</h2>
+                    <p>Dapur Sekar started as a small warung on Jalan Teuku Umar, with six tables and one wok. Ibu Sekar cooked the dishes she grew up with in Gianyar, and people kept coming back.</p>
+                    <p>Ten years on we have a bigger kitchen, but the approach hasn't changed: market-fresh ingredients, spice pastes ground by hand, and portions that leave you full.</p>
+
+                    <div class="about__more" id="storyMore" hidden>
+                        <p>Our base genep is still made from scratch every morning, with eleven spices pounded on a stone mortar. It takes time, but it's the reason our betutu tastes the way it does.</p>
+                        <p>We work with rice farmers in Tabanan and fishermen in Jimbaran, and we keep the menu short so everything we serve can be made properly, every day.</p>
+                    </div>
+
+                    <ul class="values">
+                        <li class="value">
+                            <span class="value__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></span>
+                            <div><h3>Fresh Ingredients</h3><p>Bought from the market every morning, never frozen.</p></div>
+                        </li>
+                        <li class="value">
+                            <span class="value__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><path d="M9 7h7M9 11h5"/></svg></span>
+                            <div><h3>Authentic Recipe</h3><p>Family recipes from Gianyar, cooked the traditional way.</p></div>
+                        </li>
+                        <li class="value">
+                            <span class="value__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></span>
+                            <div><h3>Made With Care</h3><p>Spice pastes ground by hand, sambal made fresh daily.</p></div>
+                        </li>
+                    </ul>
+
+                    <button type="button" class="link-arrow" id="storyToggle" aria-expanded="false" aria-controls="storyMore">
+                        <span class="story-toggle__label">Learn More</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+             MENU
+             Setiap kartu punya data-category (main, appetizer, drinks, dessert)
+             dan tombol Order dengan data-order = nama menu untuk pesan WhatsApp
+        ================================= -->
+        <section class="section section--surface" id="menu">
+            <div class="container">
+                <div class="section__header section__header--center reveal">
+                    <span class="eyebrow">Our Menu</span>
+                    <h2 class="section__title">Something for every appetite</h2>
+                    <p class="section__desc">Tap Order on any dish and we'll take it from there on WhatsApp. Dine-in, takeaway and delivery around Denpasar.</p>
+                </div>
+
+                <div class="menu__filters" role="group" aria-label="Filter menu by category">
+                    <button type="button" class="filter-btn" data-filter="all" aria-pressed="true">All</button>
+                    <button type="button" class="filter-btn" data-filter="main" aria-pressed="false">Main Course</button>
+                    <button type="button" class="filter-btn" data-filter="appetizer" aria-pressed="false">Appetizer</button>
+                    <button type="button" class="filter-btn" data-filter="drinks" aria-pressed="false">Drinks</button>
+                    <button type="button" class="filter-btn" data-filter="dessert" aria-pressed="false">Dessert</button>
+                </div>
+                <p class="menu__count" id="menuCount" aria-live="polite">Showing all 12 dishes</p>
+
+                <!-- ================================
+                     GANTI DATA MENU DI SINI
+                     (foto, nama, deskripsi, harga, badge, kategori)
+                ================================= -->
+                <div class="menu__grid">
+                    <article class="menu-card" data-category="main">
+                        <div class="menu-card__media">
+                            <img src="https://placehold.co/600x450/e8d9c5/7a5a3e?text=Nasi+Campur" alt="Nasi campur Bali with shredded chicken, sate lilit, egg and sambal" width="600" height="450" loading="lazy">
+                            <span class="tag tag--best">Best Seller</span>
+                        </div>
+                        <div class="menu-card__body">
+                            <p class="menu-card__cat">Main Course</p>
+                            <h3 class="menu-card__name">Nasi Campur Bali</h3>
+                            <p class="menu-card__desc">Rice with ayam sisit, sate lilit, lawar, crispy peanuts and our house sambal matah.</p>
+                            <div class="menu-card__foot">
+                                <p class="price">Rp 55.000</p>
+                                <a href="#" class="btn btn--primary btn--sm js-wa" data-order="Nasi Campur Bali" target="_blank" rel="noopener">Order<span class="sr-only"> Nasi Campur Bali</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="menu-card" data-category="main">
+                        <div class="menu-card__media">
+                            <img src="https://placehold.co/600x450/e8d9c5/7a5a3e?text=Ayam+Betutu" alt="Ayam betutu slow-cooked chicken wrapped in banana leaf" width="600" height="450" loading="lazy">
+                            <span class="tag tag--best">Best Seller</span>
+                        </div>
+                        <div class="menu-card__body">
+                            <p class="menu-card__cat">Main Course</p>
+                            <h3 class="menu-card__name">Ayam Betutu</h3>
+                            <p class="menu-card__desc">Half chicken rubbed in base genep and slow-cooked for six hours in banana leaf.</p>
+                            <div class="menu-card__foot">
+                                <p class="price">Rp 68.000</p>
+                                <a href="#" class="btn btn--primary btn--sm js-wa" data-order="Ayam Betutu" target="_blank" rel="noopener">Order<span class="sr-only"> Ayam Betutu</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="menu-card" data-category="main">
+                        <div class="menu-card__media">
+                            <img src="https://placehold.co/600x450/e8d9c5/7a5a3e?text=Chicken+Teriyaki" alt="Chicken teriyaki rice bowl with sesame and spring onion" width="600" height="450" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <p class="menu-card__cat">Main Course</p>
+                            <h3 class="menu-card__name">Chicken Teriyaki</h3>
+                            <p class="menu-card__desc">Grilled chicken thigh with homemade teriyaki sauce, rice and pickled cucumber.</p>
+                            <div class="menu-card__foot">
+                                <p class="price">Rp 45.000</p>
+                                <a href="#" class="btn btn--primary btn--sm js-wa" data-order="Chicken Teriyaki" target="_blank" rel="noopener">Order<span class="sr-only"> Chicken Teriyaki</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="menu-card" data-category="main">
+                        <div class="menu-card__media">
+                            <img src="https://placehold.co/600x450/e8d9c5/7a5a3e?text=Beef+Rendang" alt="Beef rendang in thick coconut and spice sauce" width="600" height="450" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <p class="menu-card__cat">Main Course</p>
+                            <h3 class="menu-card__name">Beef Rendang</h3>
+                            <p class="menu-card__desc">Beef simmered in coconut milk and spices until dark and tender. Served with rice.</p>
+                            <div class="menu-card__foot">
+                                <p class="price">Rp 72.000</p>
+                                <a href="#" class="btn btn--primary btn--sm js-wa" data-order="Beef Rendang" target="_blank" rel="noopener">Order<span class="sr-only"> Beef Rendang</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="menu-card" data-category="appetizer">
+                        <div class="menu-card__media">
+                            <img src="https://placehold.co/600x450/e8d9c5/7a5a3e?text=Sate+Lilit" alt="Sate lilit, minced fish satay wrapped around lemongrass sticks" width="600" height="450" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <p class="menu-card__cat">Appetizer</p>
+                            <h3 class="menu-card__name">Sate Lilit Ikan</h3>
+                            <p class="menu-card__desc">Six skewers of minced mackerel and coconut on lemongrass, grilled over charcoal.</p>
+                            <div class="menu-card__foot">
+                                <p class="price">Rp 38.000</p>
+                                <a href="#" class="btn btn--primary btn--sm js-wa" data-order="Sate Lilit Ikan" target="_blank" rel="noopener">Order<span class="sr-only"> Sate Lilit Ikan</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="menu-card" data-category="appetizer">
+                        <div class="menu-card__media">
+                            <img src="https://placehold.co/600x450/e8d9c5/7a5a3e?text=Tahu+Crispy" alt="Crispy tofu topped with sambal matah" width="600" height="450" loading="lazy">
+                            <span class="tag">New</span>
+                        </div>
+                        <div class="menu-card__body">
+                            <p class="menu-card__cat">Appetizer</p>
+                            <h3 class="menu-card__name">Tahu Crispy Sambal Matah</h3>
+                            <p class="menu-card__desc">Golden fried tofu with a pile of fresh shallot, chili and lemongrass sambal.</p>
+                            <div class="menu-card__foot">
+                                <p class="price">Rp 25.000</p>
+                                <a href="#" class="btn btn--primary btn--sm js-wa" data-order="Tahu Crispy Sambal Matah" target="_blank" rel="noopener">Order<span class="sr-only"> Tahu Crispy Sambal Matah</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="menu-card" data-category="drinks">
+                        <div class="menu-card__media">
+                            <img src="https://placehold.co/600x450/e8d9c5/7a5a3e?text=Es+Kopi+Susu" alt="Iced coffee with milk and palm sugar in a tall glass" width="600" height="450" loading="lazy">
+                            <span class="tag tag--best">Best Seller</span>
+                        </div>
+                        <div class="menu-card__body">
+                            <p class="menu-card__cat">Drinks</p>
+                            <h3 class="menu-card__name">Es Kopi Susu Gula Aren</h3>
+                            <p class="menu-card__desc">Kintamani coffee, fresh milk and palm sugar syrup over ice.</p>
+                            <div class="menu-card__foot">
+                                <p class="price">Rp 28.000</p>
+                                <a href="#" class="btn btn--primary btn--sm js-wa" data-order="Es Kopi Susu Gula Aren" target="_blank" rel="noopener">Order<span class="sr-only"> Es Kopi Susu Gula Aren</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="menu-card" data-category="drinks">
+                        <div class="menu-card__media">
+                            <img src="https://placehold.co/600x450/e8d9c5/7a5a3e?text=Lemongrass+Tea" alt="Iced lemongrass tea with lime slices" width="600" height="450" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <p class="menu-card__cat">Drinks</p>
+                            <h3 class="menu-card__name">Lemongrass Iced Tea</h3>
+                            <p class="menu-card__desc">Brewed with fresh lemongrass and a squeeze of lime. Lightly sweet.</p>
+                            <div class="menu-card__foot">
+                                <p class="price">Rp 22.000</p>
+                                <a href="#" class="btn btn--primary btn--sm js-wa" data-order="Lemongrass Iced Tea" target="_blank" rel="noopener">Order<span class="sr-only"> Lemongrass Iced Tea</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="menu-card" data-category="drinks">
+                        <div class="menu-card__media">
+                            <img src="https://placehold.co/600x450/e8d9c5/7a5a3e?text=Es+Kelapa" alt="Young coconut served chilled with a straw" width="600" height="450" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <p class="menu-card__cat">Drinks</p>
+                            <h3 class="menu-card__name">Es Kelapa Muda</h3>
+                            <p class="menu-card__desc">A whole young coconut, chilled. Add lime and palm sugar if you like.</p>
+                            <div class="menu-card__foot">
+                                <p class="price">Rp 25.000</p>
+                                <a href="#" class="btn btn--primary btn--sm js-wa" data-order="Es Kelapa Muda" target="_blank" rel="noopener">Order<span class="sr-only"> Es Kelapa Muda</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="menu-card" data-category="dessert">
+                        <div class="menu-card__media">
+                            <img src="https://placehold.co/600x450/e8d9c5/7a5a3e?text=Pisang+Goreng" alt="Fried banana fritters topped with grated cheese and chocolate" width="600" height="450" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <p class="menu-card__cat">Dessert</p>
+                            <h3 class="menu-card__name">Pisang Goreng Keju</h3>
+                            <p class="menu-card__desc">Crispy banana fritters with grated cheese and a drizzle of chocolate.</p>
+                            <div class="menu-card__foot">
+                                <p class="price">Rp 30.000</p>
+                                <a href="#" class="btn btn--primary btn--sm js-wa" data-order="Pisang Goreng Keju" target="_blank" rel="noopener">Order<span class="sr-only"> Pisang Goreng Keju</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="menu-card" data-category="dessert">
+                        <div class="menu-card__media">
+                            <img src="https://placehold.co/600x450/e8d9c5/7a5a3e?text=Dadar+Gulung" alt="Green pandan crepes rolled around sweet coconut filling" width="600" height="450" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <p class="menu-card__cat">Dessert</p>
+                            <h3 class="menu-card__name">Dadar Gulung</h3>
+                            <p class="menu-card__desc">Pandan crêpes rolled with grated coconut and palm sugar. Three pieces.</p>
+                            <div class="menu-card__foot">
+                                <p class="price">Rp 24.000</p>
+                                <a href="#" class="btn btn--primary btn--sm js-wa" data-order="Dadar Gulung" target="_blank" rel="noopener">Order<span class="sr-only"> Dadar Gulung</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="menu-card" data-category="dessert">
+                        <div class="menu-card__media">
+                            <img src="https://placehold.co/600x450/e8d9c5/7a5a3e?text=Bubur+Injin" alt="Black rice pudding with coconut cream" width="600" height="450" loading="lazy">
+                            <span class="tag">New</span>
+                        </div>
+                        <div class="menu-card__body">
+                            <p class="menu-card__cat">Dessert</p>
+                            <h3 class="menu-card__name">Bubur Injin</h3>
+                            <p class="menu-card__desc">Warm Balinese black rice pudding with salted coconut cream.</p>
+                            <div class="menu-card__foot">
+                                <p class="price">Rp 26.000</p>
+                                <a href="#" class="btn btn--primary btn--sm js-wa" data-order="Bubur Injin" target="_blank" rel="noopener">Order<span class="sr-only"> Bubur Injin</span></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+             BEST SELLER
+        ================================= -->
+        <section class="section bestseller" id="best-seller" aria-labelledby="bestTitle">
+            <div class="container">
+                <div class="section__header reveal">
+                    <span class="eyebrow">Best Sellers</span>
+                    <h2 class="section__title" id="bestTitle">The three dishes people order again and again</h2>
+                    <p class="section__desc">If it's your first visit, start here.</p>
+                </div>
+
+                <!-- GANTI DATA BEST SELLER DI SINI -->
+                <div class="best__grid">
+                    <article class="best-card reveal">
+                        <div class="best-card__media">
+                            <img src="https://placehold.co/800x550/4a3325/d9bfa3?text=Nasi+Campur+Bali" alt="Nasi campur Bali served on a banana leaf" width="800" height="550" loading="lazy">
+                            <span class="badge-fav">★ Customer Favorite</span>
+                            <span class="best-card__rank" aria-hidden="true">01</span>
+                        </div>
+                        <div class="best-card__body">
+                            <p class="rating"><span class="rating__stars" aria-hidden="true">★★★★★</span><strong>4.9</strong> <span>(320 reviews)</span><span class="sr-only">Rated 4.9 out of 5</span></p>
+                            <h3 class="best-card__name">Nasi Campur Bali</h3>
+                            <p class="best-card__desc">Our signature plate. A little of everything we're proud of, on one banana leaf.</p>
+                            <div class="best-card__foot">
+                                <p class="price">Rp 55.000</p>
+                                <a href="#" class="btn btn--light btn--sm js-wa" data-order="Nasi Campur Bali" target="_blank" rel="noopener">Order<span class="sr-only"> Nasi Campur Bali</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="best-card reveal" style="--delay: 100ms">
+                        <div class="best-card__media">
+                            <img src="https://placehold.co/800x550/4a3325/d9bfa3?text=Ayam+Betutu" alt="Ayam betutu opened from its banana leaf wrapping" width="800" height="550" loading="lazy">
+                            <span class="badge-fav">★ Customer Favorite</span>
+                            <span class="best-card__rank" aria-hidden="true">02</span>
+                        </div>
+                        <div class="best-card__body">
+                            <p class="rating"><span class="rating__stars" aria-hidden="true">★★★★★</span><strong>4.8</strong> <span>(274 reviews)</span><span class="sr-only">Rated 4.8 out of 5</span></p>
+                            <h3 class="best-card__name">Ayam Betutu</h3>
+                            <p class="best-card__desc">Six hours in banana leaf. Tender enough to pull apart with a spoon.</p>
+                            <div class="best-card__foot">
+                                <p class="price">Rp 68.000</p>
+                                <a href="#" class="btn btn--light btn--sm js-wa" data-order="Ayam Betutu" target="_blank" rel="noopener">Order<span class="sr-only"> Ayam Betutu</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="best-card reveal" style="--delay: 200ms">
+                        <div class="best-card__media">
+                            <img src="https://placehold.co/800x550/4a3325/d9bfa3?text=Es+Kopi+Susu" alt="Two glasses of iced palm sugar coffee" width="800" height="550" loading="lazy">
+                            <span class="badge-fav">★ Customer Favorite</span>
+                            <span class="best-card__rank" aria-hidden="true">03</span>
+                        </div>
+                        <div class="best-card__body">
+                            <p class="rating"><span class="rating__stars" aria-hidden="true">★★★★★</span><strong>4.9</strong> <span>(410 reviews)</span><span class="sr-only">Rated 4.9 out of 5</span></p>
+                            <h3 class="best-card__name">Es Kopi Susu Gula Aren</h3>
+                            <p class="best-card__desc">Kintamani beans and palm sugar. Most people order a second one.</p>
+                            <div class="best-card__foot">
+                                <p class="price">Rp 28.000</p>
+                                <a href="#" class="btn btn--light btn--sm js-wa" data-order="Es Kopi Susu Gula Aren" target="_blank" rel="noopener">Order<span class="sr-only"> Es Kopi Susu Gula Aren</span></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+             GALLERY
+             data-full = gambar besar untuk lightbox
+        ================================= -->
+        <section class="section" id="gallery">
+            <div class="container">
+                <div class="section__header section__header--center reveal">
+                    <span class="eyebrow">Gallery</span>
+                    <h2 class="section__title">A look inside Dapur Sekar</h2>
+                    <p class="section__desc">Tap any photo to see it larger.</p>
+                </div>
+
+                <!-- GANTI URL GAMBAR GALLERY DI SINI (src = kecil, data-full = besar) -->
+                <div class="gallery__grid reveal">
+                    <button type="button" class="gallery__item gallery__item--large" data-full="https://placehold.co/1600x1000/4a3325/d9bfa3?text=Dining+Area" data-caption="Our open-air dining area in the evening">
+                        <img src="https://placehold.co/900x600/4a3325/d9bfa3?text=Dining+Area" alt="Our open-air dining area in the evening" width="900" height="600" loading="lazy">
+                        <span class="gallery__zoom" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg></span>
+                    </button>
+                    <button type="button" class="gallery__item" data-full="https://placehold.co/1600x1000/e8d9c5/7a5a3e?text=Base+Genep" data-caption="Grinding base genep by hand every morning">
+                        <img src="https://placehold.co/500x500/e8d9c5/7a5a3e?text=Base+Genep" alt="Grinding base genep by hand every morning" width="500" height="500" loading="lazy">
+                        <span class="gallery__zoom" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg></span>
+                    </button>
+                    <button type="button" class="gallery__item" data-full="https://placehold.co/1600x1000/d9bfa3/5c4030?text=Sate+Grill" data-caption="Sate lilit on the charcoal grill">
+                        <img src="https://placehold.co/500x500/d9bfa3/5c4030?text=Sate+Grill" alt="Sate lilit on the charcoal grill" width="500" height="500" loading="lazy">
+                        <span class="gallery__zoom" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg></span>
+                    </button>
+                    <button type="button" class="gallery__item" data-full="https://placehold.co/1600x1000/d9bfa3/5c4030?text=Coffee+Bar" data-caption="The coffee bar, using beans from Kintamani">
+                        <img src="https://placehold.co/500x500/d9bfa3/5c4030?text=Coffee+Bar" alt="The coffee bar, using beans from Kintamani" width="500" height="500" loading="lazy">
+                        <span class="gallery__zoom" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg></span>
+                    </button>
+                    <button type="button" class="gallery__item" data-full="https://placehold.co/1600x1000/e8d9c5/7a5a3e?text=Family+Table" data-caption="A family table on a Sunday lunch">
+                        <img src="https://placehold.co/500x500/e8d9c5/7a5a3e?text=Family+Table" alt="A family table on a Sunday lunch" width="500" height="500" loading="lazy">
+                        <span class="gallery__zoom" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg></span>
+                    </button>
+                    <button type="button" class="gallery__item gallery__item--wide" data-full="https://placehold.co/1600x1000/4a3325/d9bfa3?text=Desserts" data-caption="Dadar gulung and bubur injin, fresh from the kitchen">
+                        <img src="https://placehold.co/900x450/4a3325/d9bfa3?text=Desserts" alt="Dadar gulung and bubur injin, fresh from the kitchen" width="900" height="450" loading="lazy">
+                        <span class="gallery__zoom" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+             TESTIMONIALS
+        ================================= -->
+        <section class="section section--surface" id="reviews" aria-labelledby="reviewsTitle">
+            <div class="container">
+                <div class="section__header t-head reveal">
+                    <div>
+                        <span class="eyebrow">Reviews</span>
+                        <h2 class="section__title" id="reviewsTitle">What our guests say</h2>
+                    </div>
+                    <div class="t-controls">
+                        <button type="button" class="t-btn" id="tPrev" aria-label="Previous review">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                        </button>
+                        <button type="button" class="t-btn" id="tNext" aria-label="Next review">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- ================================
+                     GANTI DATA TESTIMONIAL DI SINI
+                ================================= -->
+                <div class="t-track reveal" id="tTrack" tabindex="0" aria-label="Customer reviews, scroll horizontally">
+                    <article class="t-card">
+                        <p class="t-card__stars"><span aria-hidden="true">★★★★★</span><span class="sr-only">5 out of 5 stars</span></p>
+                        <p class="t-card__text">"The betutu was the best I've had outside of Gianyar. Spicy, but the good kind. We came back two days later."</p>
+                        <div class="t-card__author">
+                            <!-- GANTI URL GAMBAR DI BAWAH DENGAN FOTO ASLI -->
+                            <img src="https://placehold.co/92x92/e8d9c5/7a5a3e?text=PW" alt="Photo of Putu Wirawan" width="46" height="46" loading="lazy">
+                            <div><p class="t-card__name">Putu Wirawan</p><p class="t-card__meta">Gianyar, Bali</p></div>
+                        </div>
+                    </article>
+                    <article class="t-card">
+                        <p class="t-card__stars"><span aria-hidden="true">★★★★★</span><span class="sr-only">5 out of 5 stars</span></p>
+                        <p class="t-card__text">"The food was amazing and the service was excellent. Staff explained every dish on the nasi campur to us."</p>
+                        <div class="t-card__author">
+                            <img src="https://placehold.co/92x92/e8d9c5/7a5a3e?text=EH" alt="Photo of Emma Hughes" width="46" height="46" loading="lazy">
+                            <div><p class="t-card__name">Emma Hughes</p><p class="t-card__meta">Melbourne, Australia</p></div>
+                        </div>
+                    </article>
+                    <article class="t-card">
+                        <p class="t-card__stars"><span aria-hidden="true">★★★★☆</span><span class="sr-only">4 out of 5 stars</span></p>
+                        <p class="t-card__text">"Our go-to for office lunches. Ordering through WhatsApp is quick and the food always arrives hot."</p>
+                        <div class="t-card__author">
+                            <img src="https://placehold.co/92x92/e8d9c5/7a5a3e?text=RS" alt="Photo of Rina Susanti" width="46" height="46" loading="lazy">
+                            <div><p class="t-card__name">Rina Susanti</p><p class="t-card__meta">Renon, Denpasar</p></div>
+                        </div>
+                    </article>
+                    <article class="t-card">
+                        <p class="t-card__stars"><span aria-hidden="true">★★★★★</span><span class="sr-only">5 out of 5 stars</span></p>
+                        <p class="t-card__text">"Booked a table for 14 for my dad's birthday. They set everything up and even brought out a small cake."</p>
+                        <div class="t-card__author">
+                            <img src="https://placehold.co/92x92/e8d9c5/7a5a3e?text=AK" alt="Photo of Adi Kurniawan" width="46" height="46" loading="lazy">
+                            <div><p class="t-card__name">Adi Kurniawan</p><p class="t-card__meta">Surabaya</p></div>
+                        </div>
+                    </article>
+                    <article class="t-card">
+                        <p class="t-card__stars"><span aria-hidden="true">★★★★★</span><span class="sr-only">5 out of 5 stars</span></p>
+                        <p class="t-card__text">"Get the es kopi susu. Then get another one to take home. Friendly place, fair prices."</p>
+                        <div class="t-card__author">
+                            <img src="https://placehold.co/92x92/e8d9c5/7a5a3e?text=YT" alt="Photo of Yuki Tanaka" width="46" height="46" loading="lazy">
+                            <div><p class="t-card__name">Yuki Tanaka</p><p class="t-card__meta">Osaka, Japan</p></div>
+                        </div>
+                    </article>
+                </div>
+                <p class="t-progress" id="tProgress" aria-live="polite">Review 1 of 5</p>
+            </div>
+        </section>
+
+        <!-- ================================
+             OPENING HOURS
+             GANTI JAM BUKA DI SINI:
+             data-day   = 0 (Minggu) sampai 6 (Sabtu)
+             data-open  / data-close = format 24 jam "HH:MM"
+             Untuk hari libur, tambahkan data-closed="true"
+             Status "Open Now" dihitung otomatis dari tabel ini.
+        ================================= -->
+        <section class="section" id="hours" aria-labelledby="hoursTitle">
+            <div class="container hours__grid">
+                <div class="reveal">
+                    <span class="eyebrow">Opening Hours</span>
+                    <h2 class="section__title" id="hoursTitle">Open every day, lunch through dinner</h2>
+                    <p class="section__desc">Kitchen takes the last order 30 minutes before closing. On public holidays we keep our normal hours unless we post otherwise on Instagram.</p>
+                    <p class="hours__status" data-status="full"><span class="status-dot" aria-hidden="true"></span><span class="status-text">Open daily from 10:00</span></p>
+                </div>
+
+                <div class="hours__card reveal" style="--delay: 120ms">
+                    <table class="hours__table" id="hoursTable">
+                        <caption class="sr-only">Opening hours by day</caption>
+                        <tbody>
+                            <tr data-day="1" data-open="10:00" data-close="22:00"><th scope="row">Monday</th><td>10:00 – 22:00</td></tr>
+                            <tr data-day="2" data-open="10:00" data-close="22:00"><th scope="row">Tuesday</th><td>10:00 – 22:00</td></tr>
+                            <tr data-day="3" data-open="10:00" data-close="22:00"><th scope="row">Wednesday</th><td>10:00 – 22:00</td></tr>
+                            <tr data-day="4" data-open="10:00" data-close="22:00"><th scope="row">Thursday</th><td>10:00 – 22:00</td></tr>
+                            <tr data-day="5" data-open="10:00" data-close="23:00"><th scope="row">Friday</th><td>10:00 – 23:00</td></tr>
+                            <tr data-day="6" data-open="10:00" data-close="23:00"><th scope="row">Saturday</th><td>10:00 – 23:00</td></tr>
+                            <tr data-day="0" data-open="10:00" data-close="22:00"><th scope="row">Sunday</th><td>10:00 – 22:00</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+             LOCATION
+        ================================= -->
+        <section class="section section--surface" id="location" aria-labelledby="locationTitle">
+            <div class="container location__grid">
+                <div class="reveal">
+                    <span class="eyebrow">Location</span>
+                    <h2 class="section__title" id="locationTitle">Visit Us</h2>
+                    <p class="section__desc">Ten minutes from Renon, with parking for cars and motorbikes right out front.</p>
+
+                    <!-- GANTI ALAMAT, TELEPON & JAM BUKA DI SINI -->
+                    <ul class="info-list">
+                        <li class="info-item">
+                            <span class="info-item__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+                            <div><h3>Address</h3><p>Jl. Contoh No. 123<br>Denpasar, Bali 80113</p></div>
+                        </li>
+                        <li class="info-item">
+                            <span class="info-item__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>
+                            <div><h3>Phone</h3><a href="tel:+628123456789">+62 812-3456-789</a></div>
+                        </li>
+                        <li class="info-item">
+                            <span class="info-item__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+                            <div><h3>Open Daily</h3><p>10:00 – 22:00<br><span class="info-item__note">Until 23:00 on Friday & Saturday</span></p></div>
+                        </li>
+                    </ul>
+
+                    <div class="location__actions">
+                        <!-- GANTI LINK GET DIRECTIONS DI SINI (link Google Maps restoran Anda) -->
+                        <a href="https://www.google.com/maps/search/?api=1&query=Denpasar%2C+Bali" class="btn btn--primary" target="_blank" rel="noopener">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 11 19-9-9 19-2-8-8-2z"/></svg>
+                            Get Directions
+                        </a>
+                        <a href="tel:+628123456789" class="btn btn--outline">Call Us</a>
+                    </div>
+                </div>
+
+                <div class="map reveal" style="--delay: 120ms">
+                    <!-- GANTI GOOGLE MAPS EMBED URL DI SINI
+                         Cara: buka Google Maps > cari restoran Anda > Share > Embed a map > salin URL di dalam src="" -->
+                    <iframe src="https://www.google.com/maps?q=Denpasar,+Bali&output=embed" title="Map showing Dapur Sekar in Denpasar, Bali" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+             RESERVATION / CONTACT
+        ================================= -->
+        <section class="section" id="contact" aria-labelledby="reserveTitle">
+            <div class="container reserve__grid">
+                <aside class="reserve__aside reveal">
+                    <span class="eyebrow">Reservation</span>
+                    <h2 class="section__title" id="reserveTitle">Book a table</h2>
+                    <p>Fill in the form and we'll confirm by WhatsApp or phone, usually within 30 minutes during opening hours.</p>
+                    <ul class="reserve__list">
+                        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Tables for up to 10 guests online</li>
+                        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Birthday or private event? Tell us in the message</li>
+                        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>We hold tables for 15 minutes</li>
+                    </ul>
+                    <a href="#" class="btn btn--whatsapp btn--block js-wa" data-message="Halo Dapur Sekar, saya ingin reservasi meja." target="_blank" rel="noopener">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>
+                        Reserve via WhatsApp
+                    </a>
+                </aside>
+
+                <form class="form reveal" id="reserveForm" novalidate style="--delay: 120ms">
+                    <div class="form__grid">
+                        <div class="field">
+                            <label for="rName">Name</label>
+                            <input type="text" id="rName" name="name" autocomplete="name" aria-describedby="rNameError" required>
+                            <p class="field__error" id="rNameError"></p>
+                        </div>
+                        <div class="field">
+                            <label for="rPhone">Phone / WhatsApp</label>
+                            <input type="tel" id="rPhone" name="phone" autocomplete="tel" inputmode="tel" placeholder="0812 3456 7890" aria-describedby="rPhoneError" required>
+                            <p class="field__error" id="rPhoneError"></p>
+                        </div>
+                        <div class="field">
+                            <label for="rDate">Date</label>
+                            <input type="date" id="rDate" name="date" aria-describedby="rDateError" required>
+                            <p class="field__error" id="rDateError"></p>
+                        </div>
+                        <div class="field">
+                            <label for="rTime">Time</label>
+                            <input type="time" id="rTime" name="time" step="900" aria-describedby="rTimeHint rTimeError" required>
+                            <p class="field__hint" id="rTimeHint">Between opening time and 1 hour before closing.</p>
+                            <p class="field__error" id="rTimeError"></p>
+                        </div>
+                        <div class="field field--full">
+                            <label for="rGuests">Number of Guests</label>
+                            <select id="rGuests" name="guests" aria-describedby="rGuestsError" required>
+                                <option value="">Choose…</option>
+                                <option value="1">1 guest</option>
+                                <option value="2">2 guests</option>
+                                <option value="3">3 guests</option>
+                                <option value="4">4 guests</option>
+                                <option value="5">5 guests</option>
+                                <option value="6">6 guests</option>
+                                <option value="7">7 guests</option>
+                                <option value="8">8 guests</option>
+                                <option value="9">9 guests</option>
+                                <option value="10">10 guests</option>
+                            </select>
+                            <p class="field__error" id="rGuestsError"></p>
+                        </div>
+                        <div class="field field--full">
+                            <label for="rMessage">Message <span class="optional">(optional)</span></label>
+                            <textarea id="rMessage" name="message" maxlength="300" placeholder="Allergies, high chair, birthday, seating preference…" aria-describedby="rMessageError"></textarea>
+                            <p class="field__error" id="rMessageError"></p>
+                        </div>
+                        <div class="field--full">
+                            <button type="submit" class="btn btn--primary btn--block">Request Reservation</button>
+                            <p class="form__note">This form is a demo and doesn't send data anywhere. You'll get the option to confirm on WhatsApp.</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================================
+         FOOTER
+    ================================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div>
+                    <a href="#home" class="logo" aria-label="Dapur Sekar, back to top">
+                        <span class="logo__mark" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h18a9 9 0 0 1-18 0z"/><path d="M8 7c0-1.5 1-2 1-3.5M12 7c0-1.5 1-2 1-3.5M16 7c0-1.5 1-2 1-3.5"/></svg>
+                        </span>
+                        <span class="logo__text">Dapur Sekar<small>Balinese Kitchen</small></span>
+                    </a>
+                    <p class="footer__about">Good food, fresh ingredients, and a place to enjoy it with people you love. Cooking in Denpasar since 2014.</p>
+
+                    <!-- ================================
+                         GANTI LINK SOCIAL MEDIA DI SINI
+                    ================================= -->
+                    <div class="socials">
+                        <a href="https://instagram.com/" class="social" aria-label="Dapur Sekar on Instagram" target="_blank" rel="noopener">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>
+                        </a>
+                        <a href="https://tiktok.com/" class="social" aria-label="Dapur Sekar on TikTok" target="_blank" rel="noopener">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V3c.5 2.5 2.5 4.5 5 5"/></svg>
+                        </a>
+                        <a href="https://facebook.com/" class="social" aria-label="Dapur Sekar on Facebook" target="_blank" rel="noopener">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <nav aria-label="Footer navigation">
+                    <h2 class="footer__title">Explore</h2>
+                    <ul class="footer__links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Reservation</a></li>
+                    </ul>
+                </nav>
+
+                <div>
+                    <h2 class="footer__title">Visit</h2>
+                    <!-- GANTI ALAMAT, TELEPON, EMAIL & JAM BUKA FOOTER DI SINI -->
+                    <address class="footer__info">
+                        <span>Jl. Contoh No. 123, Denpasar, Bali</span>
+                        <a href="tel:+628123456789">+62 812-3456-789</a>
+                        <a href="mailto:hello@dapursekar.id">hello@dapursekar.id</a>
+                        <span>Mon–Thu & Sun 10:00 – 22:00<br>Fri–Sat 10:00 – 23:00</span>
+                    </address>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; <span id="year">2026</span> Dapur Sekar. All rights reserved.</p>
+                <p>Made in Denpasar, Bali.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="#" class="wa-float js-wa" id="waFloat" data-message="Halo Dapur Sekar, saya ingin memesan makanan." target="_blank" rel="noopener">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/><path d="M9 10.5c.5 1.5 2 3 3.5 3.5l1-1 2 1c-.3 1-1 1.5-2 1.5-2.5 0-5.5-3-5.5-5.5 0-1 .5-1.7 1.5-2l1 2z"/></svg>
+        <span class="wa-float__text">Order via WhatsApp</span>
+    </a>
+
+    <!-- Lightbox gallery -->
+    <div class="modal lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+        <button type="button" class="modal__close" data-close aria-label="Close photo viewer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+        <button type="button" class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Previous photo">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <figure class="lightbox__figure">
+            <img class="lightbox__img" id="lbImg" src="" alt="">
+            <figcaption class="lightbox__caption"><span id="lbCaption"></span><span class="lightbox__counter" id="lbCounter"></span></figcaption>
+        </figure>
+        <button type="button" class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Next photo">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+    </div>
+
+    <!-- Modal konfirmasi reservasi -->
+    <div class="modal" id="reserveModal" role="dialog" aria-modal="true" aria-labelledby="reserveModalTitle" hidden>
+        <div class="dialog">
+            <button type="button" class="modal__close" data-close aria-label="Close">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+            </button>
+            <div class="dialog__icon" aria-hidden="true">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            </div>
+            <h2 class="dialog__title" id="reserveModalTitle">Reservation received!</h2>
+            <p class="dialog__text">We will contact you shortly to confirm your reservation.</p>
+            <dl class="summary" id="reserveSummary"></dl>
+            <div class="dialog__actions">
+                <a href="#" class="btn btn--whatsapp" id="reserveWa" target="_blank" rel="noopener">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>
+                    Confirm on WhatsApp
+                </a>
+                <button type="button" class="btn btn--outline" data-close>Done</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
