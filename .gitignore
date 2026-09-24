@@ -1,0 +1,25 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Environment & secrets
+.env
+.env.*
+*.pem
+*.key
+
+# Dependencies, build & cache
+node_modules/
+dist/
+build/
+.cache/
+*.log
+
+# Not used (no package.json in this static site)
+package-lock.json
